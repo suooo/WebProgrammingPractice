@@ -1,0 +1,75 @@
+<!-- 2019314704 Park Suyeon-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login / SignUp</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <table class="wholeTable">
+      <tr class="title">
+        <th id="loginTitleTH"><br><button id="loginTitle" class="titleButton" type="button">Login</button></th>
+        <th id="signupTitleTH"><br><button id="signupTitle" class="titleButton" type="button">Sign Up</button></th>
+      </tr>
+      <tr>
+        <td colspan="2" class="main">
+
+          <div class="login">
+            <h3>Login</h3>
+            <h5 id="subtitle">Enter user name and password:</h5>
+            <form>
+              <p>Email</p>
+              <input id="login_email_i" class="inputText" type="email" placeholder="Email" onkeyup="login_Email();">
+              <div id="login_email_t" class="test">Your email address is invalid!</div>
+
+              <p class="p_up">Password</p>
+              <input id="login_pass_i" class="inputText" type="password" placeholder="Password" onkeyup="login_Password();">
+              <div id="login_pass_t" class="test">Please enter your password!</div>
+
+              <button class="submitButton" type="button" onclick="submit_Login();">Login</button>
+            </form>
+          </div>
+
+          <div class="signup">
+            <h3>Sign up</h3>
+            <h5>Fill in the form:</h5>
+            <form>
+              <p>First name</p>
+              <input id="firstName_i" class="inputText" type="text" placeholder="First name" onkeyup="valid_Name('firstName_t', 'firstName_i', 'First');">
+              <div id="firstName_t" class="test">Please enter your first name!</div>
+
+              <p class="p_up">Last name</p>
+              <input id="lastName_i" class="inputText" type="text" placeholder="Last name" onkeyup="valid_Name('lastName_t', 'lastName_i', 'Last');">
+              <div id="lastName_t" class="test">Please enter your last name!</div>
+
+              <p class="p_up"><input type="radio" name="gndr" class="gender" onclick="check_Gender();"> Male&nbsp
+              <input type="radio" name="gndr" class="gender" onclick="check_Gender();"> Female</p>
+              <img id="gender_check" src="checked.png" class="check_2">
+              <div id="gender_t" class="test test2">Please select your gender!</div>
+
+              <p class="email_up">Email</p>
+              <input id="email_i" class="inputText" type="email" placeholder="Email" onkeyup="valid_Email();">
+              <div id="email_t" class="test">Please enter your email!</div>
+
+              <p class="p_up">Password</p>
+              <input id="pass_i" class="inputText" type="password" placeholder="Password" onkeyup="valid_Password();">
+              <div id="pass_t" class="test">Please enter your password!</div>
+
+              <p class="p_up" id="cp_id">Confirm password</p>
+              <input id="c_pass_i" class="inputText" type="password" placeholder="Confirm password" onkeyup="confirm_Password();">
+              <div id="c_pass_t" class="test">Please re-enter your password!</div>
+
+              <button id="signupButton" class="submitButton" type="button" onclick="submit_Signup();">Sign Up</button>
+            </form>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+
+  </body>
+</html>

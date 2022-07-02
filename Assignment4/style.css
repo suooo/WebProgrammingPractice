@@ -1,0 +1,161 @@
+/* 2019314704 Park Suyeon */
+
+html {
+  background: #384047;
+  font-family: sans-serif;
+  padding: 20px 0;
+
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button{
+  cursor: pointer;
+}
+
+.wholeTable{
+  margin: 0 auto;
+  margin-top: 5%;
+  border-collapse: collapse;
+  width: 360px;
+  line-height: 75%;
+}
+
+.title{
+  background-color: #2F558E;
+  line-height: 40%;
+}
+
+#signupTitleTH{
+  background-color: #F0F0F0;
+}
+
+.titleButton{
+  width: 185px;
+  height: 45px;
+  border: none;
+  margin: -1px;
+}
+
+#signupTitle{
+  color: grey;
+}
+
+.main{
+  color: white;
+  background-color: #1B2024;
+  text-align: left;
+}
+
+p{
+  font-size: 13px;
+}
+
+input{
+  background-color: #171C21;
+  outline: solid white 1px;
+  border: none;
+  border-radius: 1px;
+  width: 310px;
+  height: 30px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: white;
+  float: left;
+}
+
+.test{
+  visibility: hidden;
+  background-color: #2F558E;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 28px;
+  border-radius: 5px;
+  position: relative;
+  left: 325px;
+  bottom: 37px;
+}
+
+.test2{
+  left: 325px;
+  bottom: 55px;
+  margin-bottom: -43px;
+}
+
+input:focus{
+  outline: solid red 1px;
+}
+
+.check{
+  background-image: url(checked.png);
+  background-repeat: no-repeat;
+  background-position-x: 280px;
+  background-position-y: 3px;
+  background-size: 25px;
+}
+
+.check_2{
+  visibility: hidden;
+  width: 25px;
+  position: relative;
+  left: 281px;
+  bottom: 50px;
+  margin-bottom: -20px;
+}
+
+.p_up{
+  margin-top: -15px;
+}
+.email_up{
+  margin-top: -40px;
+}
+.c_p_up{
+  margin-top: -33px;
+}
+
+
+/* LOGIN */
+.login{
+  margin: 25px;
+  margin-bottom: 20px;
+}
+
+.submitButton{
+  color: white;
+  background-color: #2F558E;
+  border: none;
+  width: 316px;
+  height: 35px;
+  margin-top: -7px;
+  font-weight: bolder;
+}
+
+
+/* SIGN UP */
+.signup{
+  display: none;
+  margin: 25px;
+  margin-bottom: 20px;
+}
+
+.signup .gender{
+  margin: auto;
+  width: 10.5px;
+  outline: none;
+  vertical-align: middle;
+  float: none;
+}
+
+.pass_condition{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
