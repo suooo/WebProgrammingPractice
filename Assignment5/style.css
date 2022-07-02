@@ -1,0 +1,225 @@
+/* 2019314704 Park Suyeon */
+
+html{
+  background: #D5F2EC;
+  font-family: sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+button{
+  cursor: pointer;
+}
+
+/* HEADER */
+.header{
+  background: white;
+  height: 45px;
+}
+
+.header h4{
+  float: left;
+  margin-left: 10px;
+  padding-top: 11px;
+  color: green;
+}
+
+.header button{
+  float: right;
+  margin-top: 7px;
+  margin-right: 10px;
+  background-color: green;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  width: 90px;
+  color: white;
+}
+
+.header button img{
+  width: 15px;
+  margin-top: 3px;
+  vertical-align: text-bottom;
+}
+
+.header button:hover{
+  background-color: darkgreen;
+  outline: 3px solid lightblue;
+}
+
+/* MODAL */
+.background{
+  display: none;
+  position: absolute;
+  margin-top: -45px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup{
+  /* display: flex; */
+  justify-content: center;
+  width: 100%;
+}
+
+.popup table{
+  display: none;
+  position: absolute;
+  border: grey 1px solid;
+  border-radius: 3px;
+  padding: 10px;
+  padding-top: 7px;
+  top: 20px;
+  width: 380px;
+  height: 500px;
+  background-color: white;
+  line-height: 200%;
+  font-size: 14px;
+
+}
+
+.line{
+  border-bottom: 1px solid lightgrey;
+}
+
+.popup h4{
+  float: left;
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+.popup #exit{
+  float: right;
+  border: none;
+  background-color: white;
+}
+
+#exit img{
+  width: 18px;
+  margin-top: 4px;
+  margin-right: -5px;
+}
+
+.popup input{
+  width: 350px;
+  height: 30px;
+  border: 1.5px lightgrey solid;
+  border-radius: 3px;
+  padding-left: 6px;
+}
+
+.popup input:focus{
+  outline: 3px solid lightblue;
+}
+
+.popup textarea{
+  font-family: sans-serif;
+  width: 350px;
+  border: 1.5px lightgrey solid;
+  border-radius: 3px;
+  padding-left: 6px;
+}
+
+.popup textarea:focus{
+  outline: 3px solid lightblue;
+}
+
+.btn button{
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  height: 30px;
+  color: white;
+  float: right;
+}
+
+.close{
+  background-color: gray;
+  margin-right: 7px;
+}
+
+.close:hover{
+  background-color: dimgray;
+}
+
+.save{
+  background-color: Dodgerblue;
+}
+
+.save:hover{
+  background-color: #1F78FF;
+}
+
+/* CARD */
+.card{
+  margin: auto;
+  margin-top: 40px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+}
+
+.card_table{
+  margin: 7px;
+  background-color: white;
+  align-items: start;
+  width: 330px;
+  height: 405px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 200%;
+  border: 0.5px lightgrey solid;
+  border-collapse: collapse;
+}
+
+.card_table button{
+  float: right;
+  margin-top: 3px;
+  margin-right: 12px;
+  width: 32px;
+  height: 30px;
+  background-color: white;
+  border: 1px red solid;
+  border-radius: 4px;
+  background: url("delete.png") no-repeat;
+  background-size: 18px;
+  background-position: center;
+}
+
+.card_table button:hover{
+  background: url("delete2.png") no-repeat;
+  background-size: cover;
+  background-size: 18px;
+  background-position: center;
+  background-color: red;
+}
+
+.card_img{
+  width: 100%;
+  height: 240px;
+  border: none;
+}
+
+.test{
+  height: 250px;
+}
+
+.blue{
+  background-color: Dodgerblue;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  width: 60px;
+  height: 30px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 1px;
+}

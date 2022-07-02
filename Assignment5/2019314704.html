@@ -1,0 +1,87 @@
+<!-- 2019314704 Park Suyeon -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tasker</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="script1.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- 'Tasker' logo & 'Add New' button -->
+    <div class="header">
+      <h4>Tasker</h4>
+      <button id="addNew" type="button"> <img src="plus.png"> Add New</button>
+    </div>
+
+    <!-- An opaque background -->
+    <div class="background">
+    </div>
+
+    <!-- Make modal -->
+    <div class="popup">
+      <table id="popup_T">
+        <tr>
+          <td class="line">
+            <h4>Add New Task</h4>
+            <button id="exit" type="button"><img src="exit.png"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Image url <br>
+            <input class="url_input" id="input" type="url" placeholder="https://image.com">
+          </td>
+        </tr>
+        <tr >
+          <td>
+            Task Title <br>
+            <input class="title_input" id="input" type="text" placeholder="UI development">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Task Type <br>
+            <input class="type_input" id="input" type="text" placeholder="study">
+          </td>
+        </tr>
+        <tr>
+          <td class="line">
+            Task Description <br>
+            <textarea class="desc_input" id="input" rows="7" cols="80" placeholder="Describe your task in detail"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="btn">
+            <button class="save" onclick="Submit_Task();">&nbspSave changes&nbsp</button>
+            <button type="submit" class="close">&nbspClose&nbsp</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Task Card -->
+    <div id="card_id" class="card">
+      <!-- <table class="card_table">
+        <tr>
+          <td><button type="button"></button></td>
+        </tr>
+        <tr class="test">
+          <td><img class="card_img" src=" "></td>
+        </tr>
+        <tr>
+          <td>
+            <h3>Mobile development</h3>
+            <p>Start developing UI part for Android</p>
+            <div class="blue">mobile</div>
+          </td>
+        </tr>
+      </table> -->
+    </div>
+
+  </body>
+</html>
