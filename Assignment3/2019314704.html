@@ -1,0 +1,76 @@
+<!-- 2019314704 Park Suyeon -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="grid">
+
+      <!-- START PAGE -->
+      <div class="cover" id="coverID">
+        <img src="assets/background.png">
+        <div class="text">
+          <h1> Javascript Quiz </h1>
+          <button type="button" onclick="delete_Cover();"> <b>Play</b> </button>
+        </div>
+      </div>
+
+
+      <!-- PROGRESS -->
+      <div class="progress" id="progressID">
+        <table class="progressT" width="44%">
+
+          <th class="bar">
+            <p id="bar_n"> Question </p>
+            <table class="barT">
+              <td></td> <td></td> <td></td> <td></td>
+            </table>
+          </th>
+
+          <th class="score" style="vertical-align:bottom;">
+              <p> <br><br> Score </p>
+              <h1 id="s_num"> 0 </h1>
+          </th>
+
+        </table>
+      </div>
+
+
+      <!-- QUESTIONS -->
+      <div class="question" id="questionID">
+        <h1 id="problem"></h1>
+        <table width="44%">
+          <tr>
+            <td class="td1"> A</td>
+            <td class="td2"> <button class="check" onclick="Ans1();"></button> </td>
+          </tr>
+          <tr>
+            <td class="td1"> B</td>
+            <td class="td2"> <button class="check" onclick="Ans2();"></button> </td>
+          </tr>
+          <tr>
+            <td class="td1"> C</td>
+            <td class="td2"> <button class="check" onclick="Ans3();"></button> </td>
+          </tr>
+          <tr>
+            <td class="td1"> D</td>
+            <td class="td2"> <button class="check" onclick="Ans4();"></button></td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- TOTAL SCORE -->
+      <div class="result" id="resultID">
+        <h1 id="score"> Total score: </h1>
+        <button type="button" onclick="play_Again();"> <b>Play Again</b> </button>
+      </div>
+
+    </div>
+  </body>
+  <script src="master.js" type="text/javascript"></script>
+</html>
